@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Conversor de sistemas</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Conversor de Sistemas</h1>
+      <form class="form" id="conversorForm">
+        <div>
+          <select name="sistemasConverter" class="seletorSistemas">
+            <option value="0">binário</option>
+            <option value="1">octadecimal</option>
+            <option value="2">decimal</option>
+            <option value="3">hexadecimal</option>
+          </select>
+          <input type="number" name="valor" id="valorEntrada" class="valor" />
+        </div>
+        <div>
+          <select name="sistemasConvertido" class="seletorSistemas">
+            <option value="0">binário</option>
+            <option value="1">octadecimal</option>
+            <option value="2">decimal</option>
+            <option value="3">hexadecimal</option>
+          </select>
+          <input
+            type="text"
+            name="valor"
+            id="valorSaida"
+            class="valor"
+            readonly
+          />
+        </div>
+      </form>
+      <button type="submit" id="submit" form="conversorForm">Converter</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
